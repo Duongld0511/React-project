@@ -15,7 +15,7 @@ const AdminSiderbar = (props: Props) => {
       <Menu style={{ height: "100%" }}>
         <Menu.Item icon={<DashboardOutlined />}>
           <Link to={"/admin"} />
-          Thống kê hoạt động
+          DASHBOAD
         </Menu.Item>
         <Menu.SubMenu title="Products">
           <Menu.Item icon={<ProfileOutlined />}>

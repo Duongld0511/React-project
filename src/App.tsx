@@ -17,7 +17,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/admin" element={<AdminLayout />}>
+        <Route
+          path="/admin"
+          element={
+            <PrivateLayout>
+              <AdminLayout />
+            </PrivateLayout>
+          }
+        >
           <Route index element={<ListProducts />} />
           <Route path="products" element={<ListProducts />} />
           <Route path="products/add" element={<AddProduct />} />

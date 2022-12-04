@@ -22,7 +22,7 @@ const { TextArea } = Input;
 type Props = {};
 
 const AddProduct = (props: Props) => {
-  const { data: cate = [], isLoading, isError } = useGetCategoriesQuery();
+  const { data: cate = [] } = useGetCategoriesQuery();
   console.log(cate);
   const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const AddProduct = (props: Props) => {
       label: item.name,
     }));
   };
-  const [addProduct] = useAddProductMutation();
+  const [addProduct, { isLoading, isError }] = useAddProductMutation();
 
   //Upload file
 
@@ -144,7 +144,9 @@ const AddProduct = (props: Props) => {
           </Upload>
         </Form.Item>
         <Form.Item label="Button">
-          <Button htmlType="submit">Add product</Button>
+          <Button htmlType="submit" loading={isLoading}>
+            Add product
+          </Button>
         </Form.Item>
       </Form>
     </>
