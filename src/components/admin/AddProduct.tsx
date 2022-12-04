@@ -17,19 +17,15 @@ import { storage } from "../../app/firebase";
 import { useGetCategoriesQuery } from "../../services/category";
 import { useAddProductMutation } from "../../services/product";
 
-const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
 type Props = {};
 
 const AddProduct = (props: Props) => {
   const { data: cate = [], isLoading, isError } = useGetCategoriesQuery();
-  const navigate = useNavigate();
   console.log(cate);
-  cate: [] = [
-    { id: 1, name: "1" },
-    { id: 2, name: "2" },
-  ];
+  const navigate = useNavigate();
+
   const getCate = () => {
     return cate.map((item) => ({
       value: item.id,

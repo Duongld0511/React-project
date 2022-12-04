@@ -37,10 +37,14 @@ const AdminHeader = (props: Props) => {
         </div>
         <div className="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end">
           <button className="w-10 h-10 text-white">
-            <i className="fa-solid fa-user"></i>
+            <Link to={"/signin"}>
+              <i className="fa-solid fa-user"></i>
+            </Link>
           </button>
           <button className="w-10 h-10 text-white">
-            <i className="fa-solid fa-right-from-bracket "></i>
+            <Link to={"/"}>
+              <i className="fa-solid fa-right-from-bracket "></i>
+            </Link>
           </button>
         </div>
       </div>

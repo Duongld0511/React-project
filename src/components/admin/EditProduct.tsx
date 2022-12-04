@@ -9,32 +9,41 @@ import {
   Upload,
 } from "antd";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
-import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { storage } from "../../app/firebase";
 import { useGetCategoriesQuery } from "../../services/category";
 import {
   useEditProductMutation,
   useGetProductQuery,
 } from "../../services/product";
-const { TextArea } = Input;
 
-const EditProduct = () => {
+const { TextArea } = Input;
+const ProductEdit = () => {
   const { id } = useParams();
   console.log(id);
   const [form] = Form.useForm();
-  const navigate = useNavigate();
+  const { data: product, isLoading, isError } = useGetProductQuery(id as any);
+  useEffect(() => {
+    //Value form
+    form.setFieldsValue({
+      name: product?.name,
+      price: product?.price,
+      sale: product?.sale,
+      amount: product?.amount,
+      category: product?.category,
+      description: product?.description,
+    });
+  }, [product]);
 
   const { data: cate = [] } = useGetCategoriesQuery();
-  console.log(cate);
   const getCate = () => {
     return cate.map((item) => ({
       value: item.id,
       label: item.name,
     }));
   };
-  const { data: product, isLoading, isError } = useGetProductQuery(id as any);
-
+  //Upload img
   const [imgUpload, setImgUpload] = useState<File>();
   const [downloadURL, setDownloadURL] = useState("");
   const [progressUpload, setProgressUpload] = useState(0);
@@ -72,20 +81,6 @@ const EditProduct = () => {
   };
   //upload file
 
-  //Value form
-  form.setFieldsValue({
-    name: product?.name,
-    price: product?.price,
-    sale: product?.sale,
-    amount: product?.amount,
-    category: product?.category,
-    description: product?.description,
-  });
-
-  const handleChange = (value: any) => {
-    console.log(value);
-  };
-
   //Update
   const [updateProd] = useEditProductMutation();
 
@@ -105,8 +100,7 @@ const EditProduct = () => {
     }
     setTimeout(() => {
       message.success("Update successful (^_^)");
-      navigate("/admin");
-    }, 1000);
+    }, 2000);
   };
   return (
     <Form form={form} className="w-1/2 mx-auto" onFinish={submitForm}>
@@ -126,7 +120,7 @@ const EditProduct = () => {
         <InputNumber />
       </Form.Item>
       <Form.Item
-        label="Sale cc"
+        label="Sale"
         name="sale"
         rules={[{ required: true, message: "Do not leave blank" }]}
       >
@@ -144,7 +138,7 @@ const EditProduct = () => {
         name="category"
         rules={[{ required: true, message: "Do not leave blank" }]}
       >
-        <Select onChange={handleChange} options={getCate()} />
+        <Select options={getCate()} />
       </Form.Item>
       <Form.Item
         label="Description"
@@ -166,10 +160,10 @@ const EditProduct = () => {
         </Upload>
       </Form.Item>
       <Form.Item label="Button">
-        <Button htmlType="submit">Edit product</Button>
+        <Button htmlType="submit">Button</Button>
       </Form.Item>
     </Form>
   );
 };
 
-export default EditProduct;
+export default ProductEdit;

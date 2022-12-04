@@ -1,13 +1,13 @@
 {
   "products": [
     {
-      "name": "Product B SUA 1111111222",
+      "name": "Product B SUA 222222 444444",
       "price": 4011112,
       "sale": 1111112,
       "amount": 112,
       "category": 3,
-      "description": "Description sửa",
-      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff5.jpg?alt=media&token=d6e3ee65-d2cb-47fc-812d-99d72f2dea80",
+      "description": "Description sửa lại lại lại",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=bd708898-531e-40db-a6b1-d53a2ad85700",
       "rate": 1,
       "id": 2
     },
