@@ -1,0 +1,138 @@
+{
+  "products": [
+    {
+      "name": "Product B SUA 1111111222",
+      "price": 4011112,
+      "sale": 1111112,
+      "amount": 112,
+      "category": 3,
+      "description": "Description sửa",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff5.jpg?alt=media&token=d6e3ee65-d2cb-47fc-812d-99d72f2dea80",
+      "rate": 1,
+      "id": 2
+    },
+    {
+      "name": "Pro 2 SUA",
+      "price": 55555,
+      "sale": 44444,
+      "amount": 6,
+      "category": 2,
+      "description": "Áo này đệp thế nhỉ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Fn1.jpg?alt=media&token=8dbbc20f-66d8-4f83-919c-c3f81677fdf2",
+      "rate": 1,
+      "id": 4
+    },
+    {
+      "name": "Product A",
+      "price": 300,
+      "sale": 259,
+      "amount": 1,
+      "category": 2,
+      "description": "Description",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Fn6.jpg?alt=media&token=498595a2-e6c1-4c32-be9a-c23a9ad5e17e",
+      "rate": 1,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Product B",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff4.jpg?alt=media&token=b81ca5d9-233e-4c87-9a77-2568fa93fe84",
+      "price": 400,
+      "sale": 370,
+      "categories": 1,
+      "description": "Description",
+      "amount": 1,
+      "rating": "1"
+    },
+    {
+      "name": "Pro 2",
+      "price": 55555,
+      "sale": 44444,
+      "amount": 6,
+      "category": 2,
+      "description": "Áo này đệp thế nhỉ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff5.jpg?alt=media&token=1f7c05c9-fa00-4074-9f31-c379390c0f1e",
+      "rating": 1,
+      "id": 7
+    },
+    {
+      "name": "Pro 5",
+      "price": 50000,
+      "sale": 40000,
+      "amount": 5,
+      "category": 2,
+      "description": "Đây là Description Pro 5",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=4cfb6f7c-2ff7-4aef-8559-a6db4a1e2364",
+      "rating": 1,
+      "id": 8
+    },
+    {
+      "name": "Pro 1 sua",
+      "price": 111111,
+      "sale": 22222,
+      "amount": 1,
+      "category": 1,
+      "description": "ádadsadadsaddafdgfhjkululghg",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=00485efb-43bf-464e-8a3f-70958c2e23b6",
+      "rate": 1,
+      "id": 9
+    },
+    {
+      "name": "Pro 2",
+      "price": 22222,
+      "sale": 11111,
+      "amount": 5,
+      "category": 1,
+      "description": "day la mo ta san pham",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff1.jpg?alt=media&token=c68cc10c-ac1d-41eb-8e2c-19e2799d9356",
+      "rating": 1,
+      "id": 10
+    },
+    {
+      "name": "Pro 2 Sua",
+      "price": 22223,
+      "sale": 11112,
+      "amount": 7,
+      "category": 3,
+      "description": "day la mo ta san pham sua",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff6.jpg?alt=media&token=a752c9a8-0a67-49e7-aa14-19e1562c5beb",
+      "rate": 1,
+      "id": 11
+    },
+    {
+      "name": "Pro 2",
+      "price": 22222,
+      "sale": 11111,
+      "amount": 5,
+      "category": 2,
+      "description": "Mô tả sản phẩm",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff8.jpg?alt=media&token=7ee92f13-2a10-4f2c-99b1-b1af0404ddd9",
+      "rating": 1,
+      "id": 12
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Men"
+    },
+    {
+      "id": 2,
+      "name": "Women"
+    },
+    {
+      "id": 3,
+      "name": "Unisex"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$Cd0O0TYKz1pFfITZmhW7S.sQ3MbluGMOdmwFnNmWAnnhvTSF3Pury",
+      "username": "Admin",
+      "rePassword": "123456",
+      "role": 1,
+      "id": 1
+    }
+  ]
+}
