@@ -10,7 +10,7 @@ import {
 } from "antd";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { storage } from "../../app/firebase";
 import { useGetCategoriesQuery } from "../../services/category";
 import {
@@ -23,6 +23,7 @@ const ProductEdit = () => {
   const { id } = useParams();
   console.log(id);
   const [form] = Form.useForm();
+  const navigate = useNavigate();
   const { data: product, isLoading, isError } = useGetProductQuery(id as any);
   useEffect(() => {
     //Value form
@@ -100,7 +101,8 @@ const ProductEdit = () => {
     }
     setTimeout(() => {
       message.success("Update successful (^_^)");
-    }, 2000);
+      navigate("/admin");
+    }, 1000);
   };
   return (
     <Form form={form} className="w-1/2 mx-auto" onFinish={submitForm}>
@@ -160,7 +162,7 @@ const ProductEdit = () => {
         </Upload>
       </Form.Item>
       <Form.Item label="Button">
-        <Button htmlType="submit">Button</Button>
+        <Button htmlType="submit">Sửa</Button>
       </Form.Item>
     </Form>
   );

@@ -1,35 +1,13 @@
 {
   "products": [
     {
-      "name": "Product B SUA 222222 444444",
-      "price": 4011112,
-      "sale": 1111112,
-      "amount": 112,
-      "category": 3,
-      "description": "Description sửa lại lại lại",
-      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=bd708898-531e-40db-a6b1-d53a2ad85700",
-      "rate": 1,
-      "id": 2
-    },
-    {
-      "name": "Pro 2 SUA",
-      "price": 55555,
-      "sale": 44444,
-      "amount": 6,
-      "category": 2,
-      "description": "Áo này đệp thế nhỉ",
-      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Fn1.jpg?alt=media&token=8dbbc20f-66d8-4f83-919c-c3f81677fdf2",
-      "rate": 1,
-      "id": 4
-    },
-    {
-      "name": "Product A",
+      "name": "Product A Sửa",
       "price": 300,
-      "sale": 259,
-      "amount": 1,
+      "sale": 299,
+      "amount": 5,
       "category": 2,
-      "description": "Description",
-      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Fn6.jpg?alt=media&token=498595a2-e6c1-4c32-be9a-c23a9ad5e17e",
+      "description": "Description sửa",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff1.jpg?alt=media&token=b26c77cc-f69f-4235-84c1-533da725b9ed",
       "rate": 1,
       "id": 5
     },
@@ -67,17 +45,6 @@
       "id": 8
     },
     {
-      "name": "Pro 1 sua",
-      "price": 111111,
-      "sale": 22222,
-      "amount": 1,
-      "category": 1,
-      "description": "ádadsadadsaddafdgfhjkululghg",
-      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=00485efb-43bf-464e-8a3f-70958c2e23b6",
-      "rate": 1,
-      "id": 9
-    },
-    {
       "name": "Pro 2",
       "price": 22222,
       "sale": 11111,
@@ -109,6 +76,39 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff8.jpg?alt=media&token=7ee92f13-2a10-4f2c-99b1-b1af0404ddd9",
       "rating": 1,
       "id": 12
+    },
+    {
+      "name": "Pro test",
+      "price": 11112,
+      "sale": 11111,
+      "amount": 5,
+      "category": 3,
+      "description": "Desc test",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=816cf3f3-17ea-4ddf-a811-df403a558e10",
+      "rate": 1,
+      "id": 13
+    },
+    {
+      "name": "Dương",
+      "price": 1111,
+      "sale": 1111,
+      "amount": 2,
+      "category": 2,
+      "description": "222222222222222",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff7.jpg?alt=media&token=36fd2b41-9b7c-4dc8-81e0-5ac6835625f0",
+      "rating": 1,
+      "id": 14
+    },
+    {
+      "name": "Pro test",
+      "price": 2213213,
+      "sale": 12131231,
+      "amount": 42,
+      "category": 2,
+      "description": "dầgehbrntyymy",
+      "image": "https://firebasestorage.googleapis.com/v0/b/reactjs-b4c0d.appspot.com/o/image%2Ff5.jpg?alt=media&token=a6e20ac9-3289-479f-8787-169d9a4566dd",
+      "rating": 1,
+      "id": 15
     }
   ],
   "categories": [
