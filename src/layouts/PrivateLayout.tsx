@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { IAuth } from "../interface/auth";
 
 type PrivateProps = {
@@ -8,12 +8,18 @@ type PrivateProps = {
 
 const PrivateAdmin = ({ children }: PrivateProps) => {
   const data = localStorage.getItem("user");
-  const dataUser = JSON.parse(data as any);
-  const role = dataUser.user.role;
-  if (role !== 1) {
-    return <Navigate to="/" />;
+  console.log(data);
+
+  if (!data) {
+    return <Navigate to="/signin" />;
   } else {
-    return children;
+    const dataUser = JSON.parse(data as any);
+    const role = dataUser.user.role;
+    if (role !== 1) {
+      return <Navigate to="/" />;
+    } else {
+      return children;
+    }
   }
 };
 

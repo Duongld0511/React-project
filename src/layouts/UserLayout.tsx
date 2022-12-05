@@ -1,10 +1,6 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-import Banner from "../components/website/Banner";
-import Contact from "../components/website/Contact";
 import Footer from "../components/website/Footer";
 import Header from "../components/website/Header";
-import Home from "../components/website/Home";
 import UserHeader from "../components/website/UserHeader";
 
 type Props = {};
